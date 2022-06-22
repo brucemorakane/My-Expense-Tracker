@@ -4,74 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title> Expense Tracker </title>
-<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="index.css">
-
+    <title>Expense Tracker App JavaScript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,900;1,400;1,600;1,800&family=Rubik&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="app">
-    <h1> Expense Tracker </h1>
-</div>
-    <h2>Your balance</h2>
-    <div id="balance">$1000</div>
-</div>
+    <div class="app">
+        <h1>Expense Tracker</h1>
 
-<div class="cashflow-container">
-    <div class="income-container">
-        <h2>Income</h2>
-        <div id="income">$1200</div>
+        <div class="balance-container">
+            <h2>Your Balance</h2>
+            <div class="balance">$3000</div>
+        </div>
+
+        <div class="cashflow-container">
+            <div class="income-container">
+                <h2>Income</h2>
+                <div id="income">$1500</div>
+            </div>
+            <div class="expense-container">
+                <h2>Expense</h2>
+                <div id="expense">$100</div>
+            </div>
+        </div>
+
+        <div class="transaction-container">
+            <h2>Transaction History</h2>
+            <ul id="transaction">
+                <li>
+                    Salary
+                    <div>
+                        <span class="income-amt">$500</span>
+                        <button>X</button>
+                    </div>
+                </li>
+                <li>
+                    Buy Grocery
+                    <div>
+                        <span class="expense-amt">$80</span>
+                        <button>X</button>
+                    </div>
+                </li>
+                <li>
+                    Buy Guitar
+                    <div>
+                        <span class="expense-amt">$500</span>
+                        <button>X</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="form-container">
+            <h2>Add new transaction</h2>
+            <form action="">
+                <label for="name">Name</label>
+                <input id="name" type="text">
+                <label for="amount">Amount</label>
+                <input id="amount" type="number">
+                <br><button id="incomeBtn">Add Income</button><br>
+                <button id="expenseBtn">Add Expense</button>
+            </form>
+        </div>
     </div>
-    <div class="expense-containere">
-        <h2>Expense</h2>
-        <div id="expense">$200</div>
-    </div>
-</div>
-
-<div class="transaction-container"></div>
-    <h2>Transaction History</h2>
-    <ul>
-        <li>
-         Salary
-         <div>
-            <span class="income">$500 </span>
-            <button>x</button>
-        </div>
-
-    </ul>
-    <li>
-        buy Grocery
-        <div>
-            <span class="expense-amt">$50</span>
-            <button>x</button>
-        </div>
-
-    </li>
-    <li>
-        Buy Guitar
-        <div>
-            <span class="expense-amt">$500</span>
-            <button>x</button>
-        </div>
-    </li>
-</ul>
-</div>
-<div class="form-container">
-    <h2>Add new Transaction</h2>
-    <form>
-        <label for="name"></label>
-        <input id="name"type="text">
-        <label for="amount" type="number">Amount</label><br><br>
-        <input id="amount" type="number">
-        <button id="incomeBtn">Add Income</button><br><br>
-        <label for="expense" type="expense"></label>
-        <input type="expense">
-        <button id="expenseBtn ">Add Expense</button>
-        
-</form>
-
-
-   
 </body>
 </html>
